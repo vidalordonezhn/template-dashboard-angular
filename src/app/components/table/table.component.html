@@ -1,0 +1,12 @@
+<!-- <h2>Holas</h2> -->
+<!-- <div class="w-full h-160 p-6 bg-gray-800 shadow-lg rounded-lg">
+  <ag-grid-angular class="ag-theme-alpine w-full h-full" [rowData]="rows" [columnDefs]="columnDefs"
+    [defaultColDef]="{ sortable: true, filter: true, resizable: true }" [pagination]="true">
+  </ag-grid-angular>
+</div> -->
+
+<app-excel-upload (dataParsed)="handleExcelData($event)"></app-excel-upload>
+
+<ngx-datatable class="dark mb-5" [rows]="rows" [columns]="[{ name: 'Nombre' }, { name: 'Edad' }, { name: 'Ciudad' }]"
+  [columnMode]="ColumnMode.force" [headerHeight]="50" [footerHeight]="50" rowHeight="auto" [limit]="10">
+</ngx-datatable>

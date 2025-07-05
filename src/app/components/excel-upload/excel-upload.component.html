@@ -1,0 +1,6 @@
+<label
+  class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded cursor-pointer shadow-md">
+  <span class="material-icons">upload_file</span>
+  {{ fileName || 'Subir Excel' }}
+  <input type="file" accept=".xlsx, .xls" (change)="onFileChange($event)" class="hidden" />
+</label>

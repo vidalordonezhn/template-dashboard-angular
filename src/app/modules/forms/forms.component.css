@@ -1,3 +1,20 @@
 :host {
   display: block;
 }
+
+
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-theme .datatable-header,
+.dark-theme .datatable-row-group,
+.dark-theme .datatable-footer {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+.dark-theme .datatable-body-row:hover {
+  background-color: #3a3a3a;
+}
